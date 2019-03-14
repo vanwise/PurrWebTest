@@ -1,3 +1,117 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src:
+        local('ProximaNova-Regular'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src:
+        local('ProximaNova-Semibold'),
+        url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src:
+        local('ProximaNova-Bold'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src:
+        local('Raleway-Regular'),
+        url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
+    font-family: 'Proxima Nova';
     font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+dd {
+    margin: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 224px;
+
+    @media (max-width: 1440px) {
+        padding: 0 200px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 0 60px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 40px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 19px 43px;
+    color: #fff;
+    background: $color_orange;
+    border-radius: 5px;
 }

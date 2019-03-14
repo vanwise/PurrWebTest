@@ -1,0 +1,104 @@
+.main-slider {
+    position: relative;
+    margin: 0 0 135px;
+    padding: 0 78px;
+
+    
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        color: #fff;
+
+        
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__item-wrapper {
+        width: 78%;
+
+        
+        @media (max-width: 768px) {
+            width: auto;
+        }
+    }
+
+    &__slide-title {
+        margin: 0 0 7px;
+        font-weight: 700;
+        font-size: 55px;
+
+        
+        @media (max-width: 768px) {
+            font-size: 35px;
+        }
+    }
+
+    &__slide-text {
+        margin: 0 0 44px 5px; 
+        width: 60%;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+
+        
+        @media (max-width: 768px) {
+            width: auto;
+        }
+    }
+
+    &__btn {
+        margin: 0 0 0 4px;
+    }
+
+    &__img {
+        margin: 77px 0 0;
+        width: 150px;
+        height: 120px;
+        
+        svg {
+            height: 100%;
+            fill: #fff;
+        }
+    }
+
+    &__controls {
+        position: absolute;
+        top: 77px;
+        right: -171px;
+
+        
+        @media (max-width: 1024px) {
+            right: 0;
+        }
+        
+        @media (max-width: 768px) {
+            top: auto;
+            bottom: 0;
+        }
+    }
+
+    &__controls-item {
+        padding: 6px 0 0 0; 
+        margin: 0 0 4px;
+
+        &.js-active {
+            padding: 0;
+
+            .main-slider__controls-btn {
+                background-image: url("../img/slide-pagination-active.png"); 
+            }
+        }
+    }
+
+    &__controls-btn {
+        width: 19px;
+        height: 22px;
+        background-image: url("../img/slide-pagination.png");
+        background-repeat: no-repeat; 
+    }
+}

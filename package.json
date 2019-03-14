@@ -1,8 +1,7 @@
 {
-  "name": "pink",
-  "version": "14.0.0",
+  "name": "PurrWebTest",
   "private": true,
-  "description": "Pink - приложение для раскраски серых будней",
+  "description": "Тестовое задание",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",

@@ -1,0 +1,35 @@
+.facts {
+    padding: 134px 0 130px;
+    
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        text-align: center;
+        margin: 0 24px;
+        width: 265px; 
+        font-weight: 700;
+        color: $color_blue;
+        
+        @media (max-width: 768px) {
+            margin: 0 0 20px;
+        }
+    }
+
+    &__number {
+        margin: 0 0 11px;
+        font-size: 60px;
+    }
+
+    &__text {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}

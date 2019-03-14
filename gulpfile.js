@@ -51,7 +51,7 @@ gulp.task("serve", function() {
 gulp.task("images", function() {
   return gulp.src([
     "source/img/*.{png,jpg}",
-    "source/img/copy/*.svg"
+    "source/img/*.svg"
   ])
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),

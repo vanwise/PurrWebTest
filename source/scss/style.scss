@@ -1,3 +1,13 @@
-@import "common.scss";
-@import "mixin.scss";
+@import "normalize.scss";
 @import "variable.scss";
+@import "mixin.scss";
+@import "common.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/main-slider.scss";
+@import "blocks/facts.scss";
+@import "blocks/services.scss";
+@import "blocks/spotlight.scss";
+@import "blocks/contact-us.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/twitter.scss";

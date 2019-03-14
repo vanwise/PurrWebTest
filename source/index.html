@@ -1,10 +1,281 @@
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Salt Homepage</title>
+    <link rel="icon" href="img/slide-pagination-active.png" type="image/x-icon">
+    <link rel="preload" href="fonts/ProximaNova-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/ProximaNova-Semibold.woff2" as="font">
+    <link rel="preload" href="fonts/ProximaNova-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="page-header" style="background-image: url(img/header-bg.png)">
+        <div class="page-header__inner container">
+            <nav class="main-navigation">
+                <a class="main-navigation__logo">
+                    <img class="main-navigation__logo-img" src="img/logo.png" alt="Salt logo">
+                </a>
+                <ul class="main-navigation__list">
+                    <li class="main-navigation__item js-active">
+                        <a class="main-navigation__link">Home</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Products</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Services</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Resources</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">About</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="main-slider">
+                <h2 class="visually-hidden">Main slider</h2>
+                <ul class="main-slider__list">
+                    <li class="main-slider__item">
+                        <div class="main-slider__item-wrapper">
+                            <h3 class="main-slider__slide-title">Device Authentication</h3>
+                            <p class="main-slider__slide-text">SALT Group is a world leader in authentication and security. We have a range of services to improve user authentication. Discover the possibilities with SALT.</p>
+                            <a class="main-slider__btn btn" href="#">GET STARTED</a>
+                        </div>
+                        <div class="main-slider__img">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250 203.2">
+                                <path d="M243.1,3.8c-9.9,5.9-20.9,10.1-32.6,12.4C201.2,6.2,187.8,0,173.1,0c-28.3,0-51.3,23-51.3,51.3c0,4,0.5,7.9,1.3,11.7C80.5,60.8,42.7,40.4,17.4,9.4C13,17,10.5,25.8,10.5,35.2c0,17.8,9.1,33.5,22.8,42.7C24.9,77.6,17,75.3,10,71.5c0,0.2,0,0.4,0,0.7c0,24.8,17.7,45.6,41.1,50.3c-4.3,1.2-8.8,1.8-13.5,1.8c-3.3,0-6.5-0.3-9.6-0.9c6.5,20.4,25.5,35.2,47.9,35.6c-17.6,13.8-39.7,22-63.7,22c-4.1,0-8.2-0.2-12.2-0.7c22.7,14.5,49.7,23,78.6,23c94.3,0,145.9-78.2,145.9-145.9c0-2.2,0-4.4-0.1-6.6c10-7.2,18.7-16.3,25.6-26.6c-9.2,4.1-19.1,6.8-29.5,8.1C231.1,25.8,239.3,15.7,243.1,3.8z"/>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="main-slider__controls">
+                    <li class="main-slider__controls-item js-active">
+                        <button class="main-slider__controls-btn">
+                            <span class="visually-hidden">
+                                <span class="js-count">1</span>
+                                slide
+                            </span>
+                        </button>
+                    </li>
+                    <li class="main-slider__controls-item">
+                        <button class="main-slider__controls-btn">
+                            <span class="visually-hidden">
+                                <span class="js-count">2</span>
+                                slide
+                            </span>
+                        </button>
+                    </li>
+                    <li class="main-slider__controls-item">
+                        <button class="main-slider__controls-btn">
+                            <span class="visually-hidden">
+                                <span class="js-count">3</span>
+                                slide
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+            <button class="page-header__btn">
+                <p class="page-header__btn-text">Find out more</p>
+            </button>
+        </div>
+        <div class="page-header__mask-wrapper">
+            <img class="page-header__mask" src="img/bg-mask.svg">
+        </div>
+    </header>
+    <main class="page-main">
+        <h1 class="visually-hidden">Salt Homepage</h1>
+        <section class="facts">
+            <h2 class="visually-hidden">Facts</h2>
+            <div class="facts__innner container">
+                <ul class="facts__list">
+                    <li class="facts__item">
+                        <p class="facts__number">126,300</p>
+                        <p class="facts__text">Identity Theft Cases Reported  in Australia</p>
+                    </li>
+                    <li class="facts__item">
+                        <p class="facts__number">$20.1bn</p>
+                        <p class="facts__text">Online Transactions per  annum by Australians</p>
+                    </li>
+                    <li class="facts__item">
+                        <p class="facts__number">45,511</p>
+                        <p class="facts__text">Online Fraud Cases Reported in Australia</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="services">
+            <div class="services__inner container">
+                <h2 class="services__title">What We Do</h2>
+                <ul class="services__list">
+                    <li class="services__item services__item--device">
+                        <img class="services__img" src="img/services-1.png" alt="">
+                        <h3 class="services__item-title">Device Authentication</h3>
+                        <p class="services__item-text">Hardware-based device fingerprinting resilient to cloning, malware and device jailbreak/root. Hardware-level control over the displayed UI independent of the device operating system. Hardware-level data protection.</p>
+                    </li>
+                    <li class="services__item services__item--user">
+                        <img class="services__img" src="img/services-2.png" alt="">
+                        <h3 class="services__item-title">User Authentication</h3>
+                        <p class="services__item-text">Verify the identity of users for access control with contemporary biometric connected MFA security tokens.</p>
+                    </li>
+                    <li class="services__item services__item--transaction">
+                        <img class="services__img" src="img/services-3.png" alt="">
+                        <h3 class="services__item-title">Transaction Authentication</h3>
+                        <p class="services__item-text">High assurance out-of-band authentication of high impact transactions and instructions initiated through electronic service delivery channels. Audit trail of verification for non-repudiation. Fraud protection against man-in-the-middle and browser malware.</p>
+                    </li>
+                    <li class="services__item services__item--contemporary">
+                        <img class="services__img" src="img/services-4.png" alt="">
+                        <h3 class="services__item-title">Contemporary authentication methods</h3>
+                        <p class="services__item-text">Echidna authentication server to enable adaptive risk-based approach to security through a range of methods for different levels of authentication assurance from SMS OTPs, Challenge/Response, to more contemporary QR code signing and advanced connected mobile security tokens capable of transaction signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other biometrics.</p>
+                    </li>
+                    <li class="services__item services__item--hsm">
+                        <img class="services__img" src="img/services-5.png" alt="">
+                        <h3 class="services__item-title">HSM Solutions</h3>
+                        <p class="services__item-text">Reseller of Thales nShield HSMs with professional services and subject matter expertise in HSMs, key ceremony procedures, and SEE code development. </p>
+                    </li>
+                    <li class="services__item services__item--cloud">
+                        <img class="services__img" src="img/services-6.png" alt="">
+                        <h3 class="services__item-title">Cloud & IoT Security</h3>
+                        <p class="services__item-text">Secure the identity and access of users, devices and Internet of Things connecting into the cloud. Support cloud adoption and migration of applications and data into private and public clouds.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="spotlight">
+            <div class="spotlight__inner">
+                <div class="spotlight__wrapper">
+                    <h2 class="spotlight__title">Product Spotlight</h2>
+                    <p class="spotlight__text">Salt mSign Connected Token is a contemporary mobile security 2FA token for authentication of user identity and verification of transactions independent of the delivery channel that initiated the request.</p>
+                    <a class="spotlight__btn btn" href="#">MORE INFO</a>
+                </div>
+                <div class="spotlight__video-wrapper">
+                    <img class="spotlight__video" src="img/video.png" alt="video">
+                </div>
+            </div>
+        </section>
+        <section class="contact-us" style="background-image: url(img/contact-us-bg.png)">
+            <h2 class="visually-hidden">Contacts us</h2>
+            <div class="contact-us__inner container">
+                <p class="contact-us__text">Ready to get started?</p>
+                <a class="contact-us__btn btn" href="#">CONTACT US</a>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__inner container">
+            <article class="page-footer__twitter twitter">
+                <div class="twitter__wrapper">
+                    <a class="twitter__logo" href="#">
+                        <img class="twitter__img" src="img/twitter-logo.png" alt="">
+                    </a>
+                    <div class="twitter__title-wrapper">
+                        <span class="twitter__title">@saltgroup</span>
+                        <h2 class="twitter__text">Twitter feed</h2>
+                    </div>
+                </div>
+                <ul class="twitter__list">
+                    <li class="twitter__item">
+                        <h3 class="twitter__item-title">Experience more with expanded Tweets</h3>
+                        <a class="twitter__link" href="http://testing123.com.au">http://testing123.com.au</a>
+                        <time class="twitter__date" datetime="">18 hours ago</time>
+                    </li>
+                    <li class="twitter__item">
+                        <h3 class="twitter__item-title">Tailored Trends bring you closer</h3>
+                        <a class="twitter__link" href="http://testing123.com.au">http://testing123.com.au</a>
+                        <time class="twitter__date" datetime="2016-06-12">12 June 2016</time>
+                    </li>
+                    <li class="twitter__item">
+                        <h3 class="twitter__item-title">Our new nest.</h3>
+                        <a class="twitter__link" href="http://testing123.com.au">http://testing123.com.au</a>
+                        <time class="twitter__date" datetime="2016-06-11">11 June 2016</time>
+                    </li>
+                </ul>
+            </article>
+            <nav class="page-footer__navigation">
+                <ul class="page-footer__group-list">
+                    <li class="page-footer__group-item">
+                        <h3 class="page-footer__group-title">Navigation</h3>
+                        <ul class="page-footer__link-list">
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link">Home</a>
+                            </li>
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="#">Products</a>
+                            </li>
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="#">Services</a>
+                            </li>
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="#">Resources</a>
+                            </li>
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="#">About</a>
+                            </li>
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="page-footer__group-item">
+                        <h3 class="page-footer__group-title">Links</h3>
+                        <ul class="page-footer__link-list">
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="#">Disclaimer</a>
+                            </li>
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="#">Legal</a>
+                            </li>
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="#">Environment Policy</a>
+                            </li>
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="#">Privacy</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="page-footer__group-item">
+                        <h3 class="page-footer__group-title">Contact sales</h3>
+                        <ul class="page-footer__link-list">
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="tel:+61396144416">
+                                    <dt class="page-footer__link-name">Phone:</dt>
+                                    <dd class="page-footer__link-value">+61 3 9614 4416</dd>
+                                </a>
+                            </li>
+                            <li class="page-footer__link-item">
+                                <a class="page-footer__link" href="mailto:sales@saltgroup.com.au">
+                                    <dt class="page-footer__link-name">Email:</dt>
+                                    <dd class="page-footer__link-value">sales@saltgroup.com.au</dd>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-footer__copyright">
+            <div class="container">
+                <p class="page-footer__copyright-text">
+                    © 2017 SALT GROUP
+                    <span class="page-footer__copyright-img"></span>
+                    ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE
+                </p>
+            </div>
+        </div>
+        <a class="page-footer__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 74 85.5">
+                <polygon fill="#7050E5" points="0,21.4 0,64.1 37,85.5 74,64.1 74,21.4 37,0 "/>
+                <path fill="#FFFFFF" d="M60.4,23.9c0,0-5.7,0.1-10.4,3.3c-4.6,3.2-13,12.4-13,12.4s-5.7,6-12.8,8.1c-5,1.6-10.7,1.3-10.7,1.3v12.5c0,0,8.5-0.3,11.4-0.9c3-0.6,8.8-1.6,14.2-6.7c5.3-5.1,11.1-10.8,13-12.9c1.9-2.1,4.7-4,5.8-4.3c1.1-0.3,2.5-0.4,2.5-0.4V23.9z"/>
+                <rect x="47.6" y="48.5" fill="#F69220" width="13" height="13"/>
+            </svg>           
+            <span class="visually-hidden">Salt logo</span>
+        </a>
+    </footer>
 </body>
 </html>

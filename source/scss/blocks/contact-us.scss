@@ -1,0 +1,32 @@
+.contact-us {
+    padding: 88px 0 71px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        padding: 44px 0; 
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 40px;
+        color: #fff;
+
+        @media (max-width: 768px) {
+            margin: 0 0 20px; 
+        }
+    }
+
+    &__btn {
+        margin: 4px 0 0;
+    }
+}

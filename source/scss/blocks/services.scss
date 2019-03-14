@@ -1,0 +1,129 @@
+.services {
+    padding: 122px 0 35px;
+    background: $color_gray;
+    
+    @media (max-width: 768px) {
+        padding: 60px 0 35px;
+    }
+
+    &__title {
+        position: relative;
+        margin: 0 73px 65px;
+        padding: 27px 48px 0;
+        text-align: right;
+        font-size: 60px;
+        color: $color_blue;
+
+        
+        @media (max-width: 768px) {
+            margin: 0 0 65px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 46px;
+            height: 46px;
+            border: 12px solid $color_orange;
+            border-left: none;
+            border-bottom: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+        margin: 0 93px 0 112px;
+
+        @media (max-width: 1440px) {
+            margin: 0 46px 0 56px;
+        }
+
+        @media (max-width: 1200px) {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        margin: 0 15px 61px;
+        width: 285px;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &--device {
+            .services__img {
+                margin: 4px 40px 28px;
+            }
+
+            .services__item-text {
+                margin: 0 7px 0 0;
+            }
+        }
+
+        &--user {
+            .services__img {
+                margin: 0 53px 29px;
+            }
+        }
+
+        &--transaction {
+            .services__img {
+                margin: 0 58px 29px;
+            }
+        }
+
+        &--contemporary {
+            .services__img {
+                margin: 0 56px 25px;
+            }
+        }
+
+        &--hsm {
+            .services__img {
+                margin: 8px 39px 29px;
+            }
+        }
+
+        &--cloud {
+            .services__img {
+                margin: 27px 28px 29px;
+            }
+        }
+    }
+
+    &__img {
+        @media (max-width: 768px) {
+            align-self: center;
+        }
+    }
+
+    &__item-title {
+        margin: 0 0 5px;
+        font-weight: 700;
+        font-size: 17px;
+        color: $color_blue;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+
+    &__item-text {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color_gray1;
+    }
+}
