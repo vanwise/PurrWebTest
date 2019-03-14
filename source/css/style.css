@@ -426,7 +426,7 @@ dd {
     text-transform: uppercase; }
   .page-header__mask-wrapper {
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     width: 100%; }
 
@@ -442,7 +442,7 @@ dd {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 0 126px; }
+  margin: 0 0 122px; }
   @media (max-width: 768px) {
     .main-navigation {
       margin: 0 0 40px; } }
@@ -456,7 +456,7 @@ dd {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 15px 0 0; }
+    margin: 12px 0 0; }
     @media (max-width: 768px) {
       .main-navigation__list {
         -webkit-box-orient: vertical;
@@ -651,19 +651,19 @@ dd {
                 flex-direction: column;
         width: 100%; } }
     .services__item--device .services__img {
-      margin: 4px 40px 28px; }
+      margin: 4px 40px 24px; }
     .services__item--device .services__item-text {
       margin: 0 7px 0 0; }
     .services__item--user .services__img {
-      margin: 0 53px 29px; }
+      margin: 0 53px 25px; }
     .services__item--transaction .services__img {
-      margin: 0 58px 29px; }
+      margin: 0 58px 25px; }
     .services__item--contemporary .services__img {
-      margin: 0 56px 25px; }
+      margin: 0 56px 21px; }
     .services__item--hsm .services__img {
-      margin: 8px 39px 29px; }
+      margin: 8px 39px 25px; }
     .services__item--cloud .services__img {
-      margin: 27px 28px 29px; }
+      margin: 27px 28px 25px; }
   @media (max-width: 768px) {
     .services__img {
       -ms-flex-item-align: center;
@@ -684,7 +684,7 @@ dd {
     color: #878787; }
 
 .spotlight {
-  padding: 108px 0 119px;
+  padding: 108px 0 115px;
   overflow: hidden; }
   @media (max-width: 768px) {
     .spotlight {
@@ -886,7 +886,7 @@ dd {
     display: -ms-flexbox;
     display: flex; }
   .twitter__logo {
-    padding: 12px 11px;
+    padding: 8px 11px;
     background: #5634d1; }
   .twitter__title-wrapper {
     -webkit-box-flex: 1;
