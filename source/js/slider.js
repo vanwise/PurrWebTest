@@ -33,7 +33,6 @@
     $controls.on('click', function(e) {
         var $target = $(e.target);
         var ELEMENT_INDEX = $sliderBtn.index($target);
-        console.log(ELEMENT_INDEX)
 
         if ($target.hasClass('js-slider-btn')) {
             $sliderBtn.removeClass(ACTIVE_CLASS);
