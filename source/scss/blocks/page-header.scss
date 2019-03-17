@@ -3,6 +3,7 @@
     padding: 32px 0 50px;
     background-repeat: no-repeat;
     overflow: hidden;
+    transition: 0.5s;
 
     &__inner {
         position: relative;
@@ -15,6 +16,11 @@
         margin: auto;
         padding: 0 0 91px;
         color: #fff;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $color_orange;
+        }
 
         &::before {
             content: "";

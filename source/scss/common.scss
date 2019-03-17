@@ -45,12 +45,14 @@
 }
 
 html {
+    min-width: 320px;
     font-family: 'Proxima Nova';
     font-size: 14px;
 }
 
 a {
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 button {
@@ -114,4 +116,10 @@ dd {
     color: #fff;
     background: $color_orange;
     border-radius: 5px;
+    transition: background 0.5s;
+
+    &:hover {
+        color: $color_blue;
+        background: rgba($color_orange, 0.5);
+    }
 }

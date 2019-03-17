@@ -12,6 +12,14 @@
     @media (max-width: 768px) {
         flex-direction: column;
     }
+
+    &__logo {
+        transition: opacity 0.5s;
+
+        &[href]:hover {
+            opacity: 0.7;
+        }
+    }
     
     &__list {
         display: flex;
@@ -55,5 +63,9 @@
         letter-spacing: 0.7px;
         text-transform: uppercase;
         color: #fff;
+
+        &[href]:hover {
+            color: $color_orange;
+        }
     }
 }

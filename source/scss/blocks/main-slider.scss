@@ -1,17 +1,25 @@
 .main-slider {
     position: relative;
-    margin: 0 0 135px;
-    padding: 0 78px;
-
+    margin: 0 78px 135px;
     
     @media (max-width: 768px) {
-        padding: 0;
+        margin: 0 0 135px;
+    }
+    
+    &__wrapper {
+        overflow: hidden; 
+    }
+    
+    &__list {
+        position: relative;
+        display: flex;
+        transition: left 0.5s;
     }
 
     &__item {
         display: flex;
+        min-width: 100%;
         color: #fff;
-
         
         @media (max-width: 768px) {
             display: block;
@@ -20,7 +28,6 @@
 
     &__item-wrapper {
         width: 78%;
-
         
         @media (max-width: 768px) {
             width: auto;
@@ -31,7 +38,6 @@
         margin: 0 0 7px;
         font-weight: 700;
         font-size: 55px;
-
         
         @media (max-width: 768px) {
             font-size: 35px;
@@ -44,7 +50,6 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 30px;
-
         
         @media (max-width: 768px) {
             width: auto;
@@ -69,36 +74,40 @@
     &__controls {
         position: absolute;
         top: 77px;
-        right: -171px;
-
+        right: -250px;
         
         @media (max-width: 1024px) {
-            right: 0;
+            right: 80px;
         }
         
         @media (max-width: 768px) {
             top: auto;
+            right: 0;
             bottom: 0;
         }
     }
-
-    &__controls-item {
-        padding: 6px 0 0 0; 
-        margin: 0 0 4px;
-
-        &.js-active {
-            padding: 0;
-
-            .main-slider__controls-btn {
-                background-image: url("../img/slide-pagination-active.png"); 
-            }
-        }
-    }
-
+    
     &__controls-btn {
+        display: block;
+        margin: 0 1px 12px;
         width: 19px;
         height: 22px;
         background-image: url("../img/slide-pagination.png");
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
+        transition: opacity 0.3s;
+        
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &.js-active {
+            margin: 0 0 10px;
+            background-image: url("../img/slide-pagination-active.png"); 
+            cursor: auto;
+            
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 }
